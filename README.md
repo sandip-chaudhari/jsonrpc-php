@@ -1,4 +1,4 @@
-#### The original thorough documentation on the site - [link](http://jsonrpcphp.org/?page=crashcourse&lang=en)
+#### The original thorough [documentation](http://jsonrpcphp.org/?page=crashcourse&lang=en)
 
 ----
 
