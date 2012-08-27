@@ -1,3 +1,10 @@
+## This Fork:
+
+#### JSONRPC 2.0 Compatibility
+Added `jsonrpc: "2.0"`, the required field to jsonrpc header, to enable compatibility with new jsonrpc 2.0 client libraries like [jquery-jsonrpc](https://github.com/datagraph/jquery-jsonrpc)
+
+- - - 
+
 #### The original thorough [documentation](http://jsonrpcphp.org/?page=crashcourse&lang=en)
 
 ----

@@ -54,12 +54,14 @@ class jsonRPCServer {
 			$result = @call_user_func_array(array($object,$request['method']),$request['params']);
             if (!is_null($result)) {
 				$response = array (
+									'jsonrpc' => '2.0',
 									'id' => $request['id'],
 									'result' => $result,
 									'error' => NULL
 									);
 			} else {
 				$response = array (
+									'jsonrpc' => '2.0',
 									'id' => $request['id'],
 									'result' => NULL,
 									'error' => 'unknown method or incorrect parameters'
@@ -67,6 +69,7 @@ class jsonRPCServer {
 			}
 		} catch (Exception $e) {
 			$response = array (
+								'jsonrpc' => '2.0',
 								'id' => $request['id'],
 								'result' => NULL,
 								'error' => $e->getMessage()
